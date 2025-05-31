@@ -3,40 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Laurentiu Dancu - Web Developer</title>
+    <title>~/laurentiu-dancu</title>
     <link rel="stylesheet" href="/src/style.css">
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">~/about</a></li>
+          <li><a href="#experience">~/tech</a></li>
+          <li><a href="#contact">~/contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section id="hero">
-        <h1>Laurentiu Dancu</h1>
-        <p class="subtitle">Web Developer & Infrastructure Specialist</p>
+        <div class="terminal">
+          <div class="terminal-header">
+            <span class="terminal-button"></span>
+            <span class="terminal-button"></span>
+            <span class="terminal-button"></span>
+          </div>
+          <div class="terminal-content">
+            <p class="command">whoami</p>
+            <h1>laurentiu-dancu</h1>
+            <p class="command">cat bio.txt</p>
+            <p class="output">Web generalist who enjoys building things that work™</p>
+          </div>
+        </div>
       </section>
 
       <section id="about">
-        <h2>About Me</h2>
+        <h2>> About</h2>
         <p>
-          With 10 years of professional experience in web development, I'm a generalist who loves working
-          across the entire stack. My expertise spans Python, PHP, TypeScript (primarily React), DevOps,
-          and infrastructure management.
+          Been writing code professionally for about a decade. Started with PHP, 
+          got into Python, fell in love with TypeScript. Recently exploring 
+          vibe coding (thankfully missed the blockchain hype).
+        </p>
+        <p>
+          I enjoy working across the entire stack - from optimizing database queries 
+          to crafting smooth UIs, and making sure it all runs reliably in production.
         </p>
       </section>
 
       <section id="experience">
-        <h2>Technical Expertise</h2>
+        <h2>> Tech Stack</h2>
         <div class="skills">
           <div class="skill-category">
-            <h3>Languages</h3>
+            <h3>$ languages</h3>
             <ul>
               <li>TypeScript/JavaScript</li>
               <li>Python</li>
@@ -44,7 +59,7 @@
             </ul>
           </div>
           <div class="skill-category">
-            <h3>Frontend</h3>
+            <h3>$ frontend</h3>
             <ul>
               <li>React</li>
               <li>Modern CSS</li>
@@ -52,7 +67,7 @@
             </ul>
           </div>
           <div class="skill-category">
-            <h3>Infrastructure</h3>
+            <h3>$ infra</h3>
             <ul>
               <li>DevOps</li>
               <li>Cloud Services</li>
@@ -63,8 +78,8 @@
       </section>
 
       <section id="contact">
-        <h2>Get in Touch</h2>
-        <p>Interested in collaborating? Let's connect!</p>
+        <h2>> Contact</h2>
+        <p class="command">git remote -v</p>
         <div class="contact-links">
           <a href="https://github.com/laurentiu-dancu" class="contact-link github">GitHub</a>
         </div>
@@ -72,7 +87,7 @@
     </main>
 
     <footer>
-      <p>&copy; 2024 Laurentiu Dancu</p>
+      <p>// Built with ❤️ using vanilla web tech</p>
     </footer>
 
     <script type="module" src="/src/main.js"></script>

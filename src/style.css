@@ -25,11 +25,26 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2');
+}
+
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   line-height: 1.6;
   background: var(--base3);
   color: var(--base00);
+}
+
+.command {
+  color: var(--green);
+  margin-bottom: 0.5rem;
+}
+
+.output {
+  color: var(--base01);
+  margin-bottom: 1rem;
 }
 
 /* Navigation */
@@ -72,13 +87,40 @@ section {
 
 /* Hero section */
 #hero {
-  text-align: center;
   padding: 4rem 0;
 }
 
+.terminal {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--base02);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.terminal-header {
+  background: var(--base2);
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--base1);
+}
+
+.terminal-content {
+  padding: 1.5rem;
+  color: var(--base3);
+}
+
 h1 {
-  font-size: 3rem;
-  color: var(--base02);
+  font-size: 2rem;
+  color: var(--base3);
   margin-bottom: 0.5rem;
 }
 
@@ -89,13 +131,13 @@ h1 {
 
 /* Section headings */
 h2 {
-  color: var(--blue);
+  color: var(--cyan);
   margin-bottom: 1.5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  color: var(--cyan);
+  color: var(--yellow);
   margin-bottom: 1rem;
 }
 
@@ -125,7 +167,7 @@ h3 {
 .contact-link {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: var(--blue);
+  background: var(--green);
   color: var(--base3);
   text-decoration: none;
   border-radius: 4px;
@@ -133,7 +175,7 @@ h3 {
 }
 
 .contact-link:hover {
-  background: var(--violet);
+  background: var(--cyan);
 }
 
 /* Footer */
