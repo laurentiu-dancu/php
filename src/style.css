@@ -157,14 +157,35 @@ h3 {
   color: var(--base01);
 }
 
+/* Projects section */
+.project-list {
+  display: grid;
+  gap: 2rem;
+}
+
+.project-item {
+  background: var(--base02);
+  border-radius: 6px;
+  padding: 1.5rem;
+  color: var(--base3);
+}
+
+.project-links {
+  margin-top: 1rem;
+}
+
 .project-link {
-  color: var(--blue);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--green);
+  color: var(--base3);
   text-decoration: none;
-  transition: color 0.2s;
+  border-radius: 4px;
+  transition: background-color 0.2s;
 }
 
 .project-link:hover {
-  color: var(--cyan);
+  background: var(--cyan);
 }
 
 /* Contact section */
